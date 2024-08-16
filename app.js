@@ -173,19 +173,7 @@ function threedslider() {
 threedslider();
 
 function offerAnim() {
-  gsap.to(".fleft-elem", {
-    scrollTrigger: {
-      trigger: "#fImages",
-      scroller: "body",
-      pin: true,
-      start: "top top",
-      end: "bottom bottom",
-      endTrigger: ".last",
-      scrub: 2,
-    },
-    y: "-300%",
-    ease: Power1,
-  });
+ 
 
   gsap.from(".fheading", {
     opacity: 0,
@@ -198,60 +186,25 @@ function offerAnim() {
     },
   });
 
+  gsap.from(".student-cards-container", {
+    opacity: 0,
+    y: 100,
+    scrollTrigger: {
+      trigger: ".fheading",
+      scroller: "body",
+      scrub: 2,
+      start: "top 20%",
+      end: "top 0%",
+    },
+  });
   gsap.from(".fsub-heading", {
     opacity: 0,
+    duration: 0.4,
     y: 100,
     scrollTrigger: {
-      trigger: ".student-cards-container",
+      trigger: ".fsub-heading",
       scroller: "body",
       scrub: 2,
-      start: "top 70%",
-      end: "top 10%",
-    },
-  });
-
-  gsap.from(".first", {
-    opacity: 0,
-    y: 100,
-    scrollTrigger: {
-      trigger: ".firstElem",
-      scroller: "body",
-      scrub: 2,
-      start: "top 50%",
-      end: "top 10%",
-    },
-  });
-  gsap.from(".sec", {
-    opacity: 0,
-    y: 100,
-    scrollTrigger: {
-      trigger: ".secElem",
-      scroller: "body",
-      scrub: 2,
-      start: "top 90%",
-      end: "top 35%",
-    },
-  });
-  gsap.from(".third", {
-    opacity: 0,
-    y: 100,
-    scrollTrigger: {
-      trigger: ".thirdElem",
-      scroller: "body",
-      scrub: 2,
-      start: "top 125%",
-      end: "top 65%",
-    },
-  });
-  gsap.from(".four", {
-    opacity: 0,
-    y: 100,
-    scrollTrigger: {
-      trigger: ".last",
-      scroller: "body",
-      scrub: 2,
-      start: "top 115%",
-      end: "top 65%",
     },
   });
 }

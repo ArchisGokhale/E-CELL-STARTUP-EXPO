@@ -1,36 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        html,body{
-          height:100%;
-          width:100%;
-        }
-        body{
-            overflow: hidden;
-            background-color: black;
-        }
-        h1{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            text-wrap: nowrap;
-            color: white;
-            font-size: 10vw;
-        }
-    </style>
+    <title>StartupExpo 2024</title>
+    <link rel="icon" href="./img/startup_expo_logo.png" type="image/png">
+    <link rel="stylesheet" href="https://use.typekit.net/sgw8nsm.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./expo24.css">
 </head>
 <body>
-    <video src="./img/Untitled design.mp4" autoplay muted loop style="width: 100%; height:100vh;object-fit: cover;"></video>
-    <h1>Coming Soon</h1>
+    <nav>
+        <a href="./index.html" target="_blank" class="logo">
+            <img src="./img/startup_expo_logo.png" alt=""><span>&nbsp;StartupExpo</span>
+        </a>
+        <div class="nav-right">
+            <img src="./img/ECELL-LOGO.png" alt="" height="60" width="60">
+            <img src="./img/mitLogo.png" alt="" height="60" width="60">
+        </div>
+    </nav>
+    <video src="./img/Untitled design.mp4" autoplay muted loop></video>
+    <section class="container"><br><br>
+        <h3>schedule</h3>
+        <ul class="nav nav-tabs"> <!--nav-justified-->
+            <li class="active"><a data-toggle="tab" href="#day1">August 20</a></li>
+            <li><a data-toggle="tab" href="#day2">August 21</a></li>
+            <li><a data-toggle="tab" href="#day3">August 22</a></li>
+            <li><a data-toggle="tab" href="#day4">August 23</a></li>
+        </ul>
+
+        <!-- Schedule: Day 1 -->
+        <div class="tab-content col-lg-9">
+            <div id="day1" class="tab-pane fade in active">
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>9:30 a.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Registration</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Gaines Theatre</p>
+                    </div>
+                </div>
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>10 a.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Panel 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Gaines Theatre</p>
+                    </div>
+                </div>
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>11 a.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Coffee break</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Lobby</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end -->
+
+            <!-- Schedule: Day 2-->
+            <div id="day2" class="tab-pane fade">
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>10 a.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Brunch</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Lobby</p>
+                    </div>
+                </div>
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>11 a.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Panel 2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Gaines Theatre</p>
+                    </div>
+                </div>
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>Noon</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Lunch</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Lobby</p>
+                    </div>
+                </div>
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>1 p.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Panel 3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Gaines Theatre</p>
+                    </div>
+                </div>
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>2 p.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Panel 4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Gaines Theatre</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end -->
+
+            <!--Schedule: Day 3 -->
+            <div id="day3" class="tab-pane fade">
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>8:30 a.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Panel 5</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Gaines Theatre</p>
+                    </div>
+                </div>
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>9:30 a.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Closing remarks</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Gaines Theatre</p>
+                    </div>
+                </div>
+            </div>
+            <div id="day4" class="tab-pane fade">
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>8:30 a.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Panel 5</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Gaines Theatre</p>
+                    </div>
+                </div>
+                <div class="row schedule-item">
+                    <div class="col-md-2">
+                        <time>9:30 a.m.</time>
+                    </div>
+                    <div class="col-md-10">
+                        <h4>Closing remarks</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <p><strong>Location: </strong> Gaines Theatre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+
+    </section>
+    <br>
+    <h1>hello</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
